@@ -1,0 +1,64 @@
+:root{
+  ---dice-black: black;
+}
+
+.dice-5{
+  border: solid 3px var(---dice-black);
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  position: relative;
+  top: 500px;
+  display: flex;
+}
+
+.dice-5 .dot{
+  background-color: var(---dice-black);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border: solid;
+  margin: 25px;
+}
+.one{
+  left: 1px;
+}
+
+.two{
+  right: 1px;
+}
+.three{
+  top: 33px;
+  left: 33px;
+  
+}
+.four{
+  left: 1px;
+  bottom: 1px;
+}
+.five{
+  right: 1px;
+  bottom: 1px;
+}
+.alpha{
+  right: 1px;
+}
+
+.beta{
+  left: 1px;
+  top: 40px;
+}
+.delta{
+  right: 1px;
+  top: 40px;
+}
+.ekko{
+  top: 80px;
+  left: 1px;
+}
+.fox{
+  top: 80px;
+  right: 1px;
+}

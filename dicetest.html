@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roll</title>
+  </head>
+  <body>
+    <div id="resultContainer"></div>
+
+    <script>
+      function rollDice() {
+        // Generate a random number between 1 and 6 to simulate a dice roll
+        let diceResult = Math.floor(Math.random() * 6) + 1;
+
+        // Create a new div element with the result
+        let resultDiv = document.createElement("div");
+
+        if (diceResult === 1) {
+          resultDiv.textContent = "Dice rolled a one!";
+        } else if (diceResult === 2) {
+          resultDiv.textContent = "Dice rolled a two!";
+        } else if (diceResult === 3) {
+          resultDiv.textContent = "Dice rolled a three!";
+        } else if (diceResult === 4) {
+          resultDiv.textContent = "Dice rolled a four!";
+        } else if (diceResult === 5) {
+          resultDiv.textContent = "Dice rolled a five!";
+        } else {
+          // Handle the case when the dice result is 6
+          resultDiv.textContent = "It's a six!";
+        }
+
+        // Return the created div element
+        return resultDiv;
+      }
+
+      // Get the result div and append it to the resultContainer
+      let resultContainer = document.getElementById("resultContainer");
+      resultContainer.appendChild(rollDice());
+    </script>
+  </body>
+</html>
